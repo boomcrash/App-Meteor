@@ -5,6 +5,9 @@
       <div class="text-center">
         <img src="https://i.ibb.co/rpBp5c8/vue-meteor.png"  alt="Vuetify" height="180px" width="auto"/>
       </div>
+
+      <router-view name="sectionView"></router-view>
+
       <div class="text-center">
         <img src="https://i.ibb.co/1GvnVwc/asus.png"  alt="powered" id="poweredeLogo" height="35px"/>
       </div>
@@ -37,7 +40,5 @@ export default {
   position: relative;
 }
 
-html {
-  overflow-y: hidden !important;
-}
+
 </style>
