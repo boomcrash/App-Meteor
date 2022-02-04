@@ -1,6 +1,8 @@
 import LytAuth from "../layouts/LytAuth";
 import loginRoutes from "./loginRoutes";
 import Acerca from "../layouts/Acerca";
+import LytSPA from "../layouts/LytSPA";
+import Home from "../../view/Home/Home";
 
 
 export default [
@@ -14,5 +16,21 @@ export default [
             allPageView:Acerca
         }
     },
-    loginRoutes
+    loginRoutes,
+    {
+        path:"/",
+        components:{
+            allPageView:LytSPA
+        },
+        children:[
+            {
+                name:'home',
+                path:'',
+                components:{
+                    sectionView:Home
+                }
+            }
+        ]
+    }
+
 ]

@@ -10,7 +10,7 @@
                     label="CONTRASEÑA" name="password" prepend-icon="lock"  type="password">
       </v-text-field>
       <div class="d-flex justify-end">
-        <v-btn color="primary" text small>
+        <v-btn color="primary" text :to="{name:'forgotPassword'}" text small>
           ¿olvide mi contraseña?
         </v-btn>
       </div>
