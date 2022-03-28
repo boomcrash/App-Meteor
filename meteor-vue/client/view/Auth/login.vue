@@ -15,7 +15,7 @@
         </v-btn>
       </div>
       <div class="d-flex justify-center">
-      <v-btn type="submit" rounded color="primary" transition="fade">INGRESAR</v-btn>
+      <v-btn type="submit" rounded color="primary" transition="fade" :to="{name:'home'}">INGRESAR</v-btn>
       </div>
       <alert-message ref="refAlertLogin"></alert-message>
     </v-form>

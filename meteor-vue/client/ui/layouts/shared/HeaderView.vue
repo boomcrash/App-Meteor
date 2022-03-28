@@ -6,7 +6,7 @@
     <div>User logged</div>
     <template v-slot:extension>
       <v-tabs model="optionSelected" align-with-title>
-        <v-tab v-for="option in options" :key="option.title" v-text="option.title"></v-tab>
+        <v-tab v-for="option in options" :key="option.title"  :to="{name:option.nameRoute}"  v-text="option.title"></v-tab>
       </v-tabs>
     </template>
   </v-app-bar>
@@ -18,18 +18,19 @@ import UserLogged from "../../components/UserLogged/UserLogged";
 export default {
   name: "HeaderView",
   components: {UserLogged},
-  UserLogged,
   data(){
     return{
       optionSelected:0,
       options:[
         {
           icon:'home',
-          title:'Inicio'
+          title:'Inicio',
+          nameRoute:'home'
         },
         {
           icon:'person',
-          title:'Usuarios'
+          title:'Usuarios',
+          nameRoute:'home.users'
         },
         {
           icon:'user-tag',

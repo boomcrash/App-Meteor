@@ -9,7 +9,7 @@
     <v-form @submit.prevent="forgotPassword">
 
       <v-text-field v-model="user.email" id="inputEmail" name="email" type="email" label="Correo Electronico"> </v-text-field>
-      <v-btn color="primary" rounded type="submit">RECUPERAR</v-btn>
+      <v-btn color="primary" rounded type="submit" :to="{name:'resetPassword'}">RECUPERAR</v-btn>
     </v-form>
   </div>
 </template>

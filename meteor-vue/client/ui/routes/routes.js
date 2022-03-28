@@ -3,6 +3,8 @@ import loginRoutes from "./loginRoutes";
 import Acerca from "../layouts/Acerca";
 import LytSPA from "../layouts/LytSPA";
 import Home from "../../view/Home/Home";
+import ConfigureAccount from "../../view/Account/ConfigureAccount";
+import userRoutes from "./userRoutes";
 
 
 export default [
@@ -29,7 +31,15 @@ export default [
                 components:{
                     sectionView:Home
                 }
-            }
+            },
+            {
+                name:'home.account',
+                path:'account',
+                components:{
+                    sectionView:ConfigureAccount
+                }
+            },
+            userRoutes
         ]
     }
 

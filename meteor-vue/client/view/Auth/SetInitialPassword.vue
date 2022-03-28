@@ -18,7 +18,7 @@
 
         </v-text-field>
         <div class="d-flex justify-start mt-2 ">
-          <v-btn type="submit" color="primary" rounded>Resetear</v-btn>
+          <v-btn type="submit" color="primary" rounded :to="{name:'enrollAccount'}">Resetear</v-btn>
         </div>
       </v-form>
   </div>
